@@ -1,0 +1,51 @@
+#server:
+#  port: 8084
+#
+#spring:
+#    application:
+#      name:temporal-worker
+#    temporal:
+#      connection:
+#        host: localhost
+#        port: 7233
+#        namespace: default
+#      task-queue: order-fulfilllment-queue
+#
+#logging:
+#  level:
+#    io.temporal: DEBUG
+#    org.example: INFO
+
+#server:
+#  port: 8084
+#
+#spring:
+#  application:
+#    name: temporal-worker
+#
+#temporal:
+#  service:
+#    target: localhost:7233
+#  namespace: default
+#
+#  workers:
+#    - task-queue: order-fulfilllment-queue
+
+server:
+  port: 8084
+
+spring:
+  application:
+    name: temporal-worker
+
+temporal:
+  service:
+    target: localhost:7233
+  namespace: default
+
+  workers:
+    - task-queue: order-fulfillment-queue
+
+logging:
+  level:
+    io.temporal: INFO

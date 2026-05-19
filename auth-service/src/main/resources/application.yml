@@ -1,0 +1,27 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cart_db
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+app:
+  jwt:
+    secret: "JmOhT73SmmCi6kilzNi07YGh1ZAq3rBcbZV1CCiXzW0="
+    expiration-ms: 86400000
+
+admin:
+  email: "admin@shoop.com"
+  password: "Admin@123"
+  name: "Admin"
