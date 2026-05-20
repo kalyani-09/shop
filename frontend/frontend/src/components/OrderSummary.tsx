@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import api from '../api/axios';
+import { useCart } from '../context/CartContext';
 
 interface CartItem {
   id: number;
@@ -42,6 +43,7 @@ const OrderSummary = ({
   paymentDetails
 }: OrderSummaryProps) => {
   const navigate = useNavigate();
+  const { fetchCartCount } = useCart();
 
   const subtotal = Array.isArray(cartItems)
     ? cartItems.reduce(
@@ -83,11 +85,13 @@ const OrderSummary = ({
 
     try {
       await api.post('/cart/checkout');
+      await fetchCartCount();
 
       navigate('/final');
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error placing order:', error);
-      alert('Failed to place order. Please try again.');
+      const message = error.response?.data?.message || 'Failed to place order. Please try again.';
+      alert(`Failed to place order: ${message}`);
     }
   };
 

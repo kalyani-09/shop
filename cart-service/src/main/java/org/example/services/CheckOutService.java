@@ -34,6 +34,7 @@ public class CheckOutService {
     private final CartService cartService;
     private final OrderFulfillmentWorkflowClient workflowClient;
     private final OrderQueryService orderQueryService;
+    private final NotificationService notificationService;
 
     @Autowired
     private RestTemplate restTemplate;
@@ -41,11 +42,13 @@ public class CheckOutService {
     public CheckOutService(OrderRepository orderRepository,
                            CartService cartService,
                            OrderFulfillmentWorkflowClient workflowClient,
-                           OrderQueryService orderQueryService) {
+                           OrderQueryService orderQueryService,
+                           NotificationService notificationService) {
         this.orderRepository = orderRepository;
         this.cartService = cartService;
         this.workflowClient = workflowClient;
         this.orderQueryService = orderQueryService;
+        this.notificationService = notificationService;
     }
 
     @Transactional
@@ -134,6 +137,12 @@ public class CheckOutService {
                 logger.info("Saving order: {}", orderNumber);
                 Order savedOrder = orderRepository.saveAndFlush(order);
                 logger.info("Order saved successfully: {} with id: {}", savedOrder.getOrderNumber(), savedOrder.getId());
+
+                try {
+                    notificationService.sendOrderNotificationToAdmins("one order received");
+                } catch (Exception e) {
+                    logger.error("Failed to send order notification to admins: {}", e.getMessage());
+                }
 
                 return savedOrder;
 

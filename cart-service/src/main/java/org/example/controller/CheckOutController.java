@@ -15,9 +15,11 @@ import java.util.Map;
 public class CheckOutController {
 
     private final CheckOutService checkOutService;
+    private final org.example.services.NotificationService notificationService;
 
-    public CheckOutController(CheckOutService checkOutService) {
+    public CheckOutController(CheckOutService checkOutService, org.example.services.NotificationService notificationService) {
         this.checkOutService = checkOutService;
+        this.notificationService = notificationService;
     }
 
     @PostMapping("/checkout")
@@ -139,6 +141,11 @@ public class CheckOutController {
         Map<String, Object> response = new HashMap<>();
         response.put("order", order);
         return ResponseEntity.ok(response);
+    }
+
+    @GetMapping(value = "/admin/orders/notifications", produces = org.springframework.http.MediaType.TEXT_EVENT_STREAM_VALUE)
+    public org.springframework.web.servlet.mvc.method.annotation.SseEmitter getNotifications() {
+        return notificationService.registerAdmin();
     }
 
     private String getCurrentUserId() {

@@ -155,36 +155,7 @@ public AddItemResponse addItemToCart(String userId, Long productId, Integer quan
         logger.info("Added new item to cart: {}", productName);
     }
 
-    // Step 5: Reserve stock
-    Long updateCartItemId = System.currentTimeMillis();
-
-    stockKafkaProducerService.requestStockUpdate(
-            cart.getId(),
-            productId,
-            quantity,
-            updateCartItemId,
-            "RESERVE"
-    );
-
-    StockCheckResponse updateResponse =
-            waitForStockUpdate(updateCartItemId, 10000);
-
-    Integer remainingStock = null;
-
-    if (updateResponse != null && updateResponse.getIsAvailable()) {
-
-        remainingStock = updateResponse.getAvailableQuantity();
-
-        savedItem.setStockQuantity(remainingStock);
-
-        cartItemRepository.save(savedItem);
-
-        stockKafkaProducerService.publishStockUpdate(
-                productId,
-                remainingStock,
-                "RESERVE"
-        );
-    }
+    Integer remainingStock = currentStock;
 
     return new AddItemResponse(
             savedItem,
@@ -206,7 +177,6 @@ public AddItemResponse addItemToCart(String userId, Long productId, Integer quan
         if (!item.getCart().getId().equals(cartId)) {
             throw new RuntimeException("Item does not belong to cart: " + cartId);
         }
-        stockKafkaProducerService.publishStockUpdate(item.getProductId(), item.getQuantity(), "RELEASE");
         cartItemRepository.deleteById(itemId);
         logger.info("removed item {} from cart {} for user {}", itemId, cartId, userId);
     }
@@ -218,10 +188,6 @@ public AddItemResponse addItemToCart(String userId, Long productId, Integer quan
                 .orElseThrow(() -> new RuntimeException("Cart not found: " + cartId));
         if (!cart.getUserId().equals(userId)) {
             throw new RuntimeException("Cart does not belong to user: " + userId);
-        }
-        List<CartItem> items = cartItemRepository.findByCartId(cartId);
-        for(CartItem item : items){
-            stockKafkaProducerService.publishStockUpdate(item.getProductId(), item.getQuantity(), "RELEASE");
         }
         cartItemRepository.deleteByCartId(cartId);
         logger.info("Cleared all items from cart: {} for user: {}", cartId, userId);

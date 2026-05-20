@@ -9,17 +9,38 @@ import api from '../api/axios'
 
 import { useNavigate } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
+import { useAuth } from '../context/AuthContext'
 
 export default function ProductDetails() {
   const { id } = useParams<{ id: string }>()
   const [product, setProduct] = useState<Product | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [quantity, setQuantity] = useState(1)
+  const [quantity, setQuantity] = useState(() => {
+    if (id) {
+      const saved = localStorage.getItem(`product_qty_${id}`);
+      if (saved) {
+        const parsed = parseInt(saved, 10);
+        if (!isNaN(parsed) && parsed > 0) {
+          return parsed;
+        }
+      }
+    }
+    return 1;
+  });
   const navigate = useNavigate();
   const { fetchCartCount } = useCart();
+  const { isAuthenticated } = useAuth();
+
+  const updateQuantity = (val: number) => {
+    setQuantity(val);
+    if (id) {
+      localStorage.setItem(`product_qty_${id}`, val.toString());
+    }
+  };
+
   useEffect(() => {
-    const fetchProduct = async () => {
+    const fetchProductAndCart = async () => {
       try {
         setLoading(true)
         const response = await api.get(`/products/${id}`)
@@ -37,6 +58,33 @@ export default function ProductDetails() {
         }
         setProduct(formatted)
         setError(null)
+
+        const savedQty = localStorage.getItem(`product_qty_${id}`);
+        if (savedQty) {
+          const parsed = parseInt(savedQty, 10);
+          if (!isNaN(parsed) && parsed > 0) {
+            setQuantity(Math.min(formatted.stock, parsed));
+          } else {
+            setQuantity(1);
+          }
+        } else if (isAuthenticated) {
+          try {
+            const cartResponse = await api.get('/cart')
+            const cartData = cartResponse.data
+            if (cartData && cartData.items) {
+              const cartItem = cartData.items.find((item: any) => item.productId === formatted.id)
+              if (cartItem) {
+                setQuantity(cartItem.quantity)
+              } else {
+                setQuantity(1)
+              }
+            }
+          } catch (cartErr) {
+            console.error("Error fetching cart for product quantity:", cartErr)
+          }
+        } else {
+          setQuantity(1)
+        }
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Something went wrong')
       } finally {
@@ -45,9 +93,9 @@ export default function ProductDetails() {
     }
 
     if (id) {
-      fetchProduct()
+      fetchProductAndCart()
     }
-  }, [id])
+  }, [id, isAuthenticated])
 
   const handleAddToCart = async () => {
     try {
@@ -60,6 +108,9 @@ export default function ProductDetails() {
         }
       });
       await fetchCartCount();
+      if (id) {
+        localStorage.removeItem(`product_qty_${id}`);
+      }
       toast.success("Product added to cart");
     } catch (error) {
       console.error("Error adding a product to cart:", error)
@@ -78,6 +129,9 @@ export default function ProductDetails() {
         }
       });
       await fetchCartCount();
+      if (id) {
+        localStorage.removeItem(`product_qty_${id}`);
+      }
       navigate("/cart");
     } catch (error) {
       console.error("Error adding a product to cart:", error)
@@ -192,7 +246,7 @@ export default function ProductDetails() {
             <div className="flex items-center gap-6 mb-10">
               <div className="flex items-center bg-slate-50 border border-slate-200 rounded-full p-1 shadow-sm">
                 <button
-                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                  onClick={() => updateQuantity(Math.max(1, quantity - 1))}
                   className="w-11 h-11 flex items-center justify-center rounded-full text-slate-600 hover:bg-white hover:text-indigo-600 hover:shadow-sm transition-all"
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -201,7 +255,7 @@ export default function ProductDetails() {
                 </button>
                 <span className="w-12 text-center font-bold text-slate-900 text-lg">{quantity}</span>
                 <button
-                  onClick={() => setQuantity(Math.min(product.stock, quantity + 1))}
+                  onClick={() => updateQuantity(Math.min(product.stock, quantity + 1))}
                   className="w-11 h-11 flex items-center justify-center rounded-full text-slate-600 hover:bg-white hover:text-indigo-600 hover:shadow-sm transition-all"
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

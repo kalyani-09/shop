@@ -15,14 +15,14 @@ import ViewOrderDetail from './pages/viewOrderDetail'
 import ReelsPage from './pages/ReelsPage'
 import UploadReelPage from './pages/UploadReelPage'
 import { ProtectedRoute } from './components/ProtectedRoute'
-
-
+import { AdminNotificationListener } from './components/AdminNotificationListener'
 
 function App() {
   return (
 
     <>
       <Toaster position="top-right" />
+      <AdminNotificationListener />
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />

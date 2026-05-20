@@ -164,6 +164,8 @@ export default function AddToCart() {
     );
   }
 
+  const hasFailedItems = cartItems.some(item => item.status === 'FAILED');
+
   return (
     <div className="min-h-screen bg-white font-sans">
       <Header />
@@ -194,14 +196,25 @@ export default function AddToCart() {
                 };
 
                 return (
-                  <AdminProductItem
-                    key={item.id}
-                    product={product}
-                    variant="cart"
-                    quantity={item.quantity}
-                    onUpdateQuantity={handleUpdateQuantity}
-                    onDelete={() => handleRemoveItem(item.id)}
-                  />
+                  <div key={item.id} className="mb-4">
+                    <div className={item.status === 'FAILED' ? 'border-2 border-rose-200 rounded-[2rem] overflow-hidden shadow-sm' : ''}>
+                      <AdminProductItem
+                        product={product}
+                        variant="cart"
+                        quantity={item.quantity}
+                        onUpdateQuantity={handleUpdateQuantity}
+                        onDelete={() => handleRemoveItem(item.id)}
+                      />
+                      {item.status === 'FAILED' && (
+                        <div className="p-4 bg-rose-50 border-t border-rose-100 text-xs font-semibold text-rose-600 flex items-center gap-2">
+                          <svg viewBox="0 0 24 24" className="h-4 w-4 text-rose-500 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5">
+                            <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                          <span>Insufficient stock! Only {item.stockQuantity} items available in inventory. Please reduce the quantity.</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 );
               })}
             </div>
@@ -234,16 +247,33 @@ export default function AddToCart() {
                 </div>
               </div>
 
-              <Link 
-                to="/checkout"
-                className="w-full bg-indigo-600 text-white py-4 rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100 flex items-center justify-center gap-2 group"
-              >
-                Proceed to checkout
-                <svg viewBox="0 0 24 24" className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </Link>
+              {hasFailedItems ? (
+                <button
+                  disabled
+                  className="w-full bg-slate-200 text-slate-400 py-4 rounded-2xl font-bold cursor-not-allowed flex items-center justify-center gap-2 border border-slate-300"
+                >
+                  Proceed to checkout
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+              ) : (
+                <Link 
+                  to="/checkout"
+                  className="w-full bg-indigo-600 text-white py-4 rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100 flex items-center justify-center gap-2 group"
+                >
+                  Proceed to checkout
+                  <svg viewBox="0 0 24 24" className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </Link>
+              )}
 
+              {hasFailedItems && (
+                <p className="mt-4 text-center text-xs font-semibold text-rose-500 leading-relaxed px-4">
+                  Please resolve stock issues before checking out.
+                </p>
+              )}
               
               <p className="mt-6 text-center text-[11px] text-slate-400 leading-relaxed px-4">
                 Secure encrypted checkout. Free returns within 30 days.
