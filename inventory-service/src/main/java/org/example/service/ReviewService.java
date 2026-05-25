@@ -8,8 +8,6 @@ import org.example.dto.ReviewResponse;
 import org.example.entity.Review;
 import org.example.repository.ProductRepository;
 import org.example.repository.ReviewRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -19,8 +17,6 @@ import java.util.Optional;
 
 @Service
 public class ReviewService {
-
-    private static final Logger log = LoggerFactory.getLogger(ReviewService.class);
 
     private final ReviewRepository reviewRepository;
     private final ProductRepository productRepository;
