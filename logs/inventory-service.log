@@ -647,3 +647,18 @@ org.apache.kafka.common.errors.DisconnectException: null
 2026-05-25T15:33:51.991+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
 2026-05-25T15:33:51.992+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
 2026-05-25T15:34:05.868+05:30  WARN 33812 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m17s163ms).
+Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.average_rating,p1_0.category,p1_0.created_by,p1_0.description,p1_0.imageurl,p1_0.name,p1_0.price,p1_0.review_count,p1_0.sku,p1_0.stock_quantity from products p1_0 where p1_0.id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.average_rating,p1_0.category,p1_0.created_by,p1_0.description,p1_0.imageurl,p1_0.name,p1_0.price,p1_0.review_count,p1_0.sku,p1_0.stock_quantity from products p1_0 where p1_0.id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select p1_0.id,p1_0.average_rating,p1_0.category,p1_0.created_by,p1_0.description,p1_0.imageurl,p1_0.name,p1_0.price,p1_0.review_count,p1_0.sku,p1_0.stock_quantity from products p1_0 where p1_0.id=?
+Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
