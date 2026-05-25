@@ -1,4 +1,20 @@
 import React from 'react';
+import CustomDropdown from './CustomDropdown';
+
+const countryMap: Record<string, string> = {
+  "USA": "USA",
+  "UK": "UK",
+  "Canada": "CAN",
+  "India": "IND",
+};
+
+const reverseCountryMap: Record<string, string> = {
+  "USA": "USA",
+  "UK": "UK",
+  "CAN": "Canada",
+  "IND": "India",
+};
+
 interface ShippingAddressProps {
   address: {
     fullName: string;
@@ -112,25 +128,15 @@ export default function ShippingAddress({ address, setAddress }: ShippingAddress
           required
           className="w-full px-5 py-2 bg-slate-50 border border-slate-100 rounded-2xl text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
         />
-        <div className="relative">
-          <select 
-            name="country"
-            value={address.country}
-            onChange={handleChange}
-            required
-            className="w-full px-5 py-2 bg-slate-50 border border-slate-100 rounded-2xl text-slate-900 appearance-none focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
-          >
-            <option value="USA">USA</option>
-            <option value="UK">UK</option>
-            <option value="CAN">Canada</option>
-            <option value="IND">India</option>
-          </select>
-          <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
-            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-        </div>
+        <CustomDropdown
+          options={["USA", "UK", "Canada", "India"]}
+          selected={reverseCountryMap[address.country] || address.country}
+          onSelect={(val) => {
+            const code = countryMap[val] || val;
+            setAddress((prev: any) => ({ ...prev, country: code }));
+          }}
+          className="w-full"
+        />
       </div>
     </section>
   );
