@@ -24,7 +24,6 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-
 @Service
 public class CheckOutService {
 
@@ -40,10 +39,10 @@ public class CheckOutService {
     private RestTemplate restTemplate;
 
     public CheckOutService(OrderRepository orderRepository,
-                           CartService cartService,
-                           OrderFulfillmentWorkflowClient workflowClient,
-                           OrderQueryService orderQueryService,
-                           NotificationService notificationService) {
+            CartService cartService,
+            OrderFulfillmentWorkflowClient workflowClient,
+            OrderQueryService orderQueryService,
+            NotificationService notificationService) {
         this.orderRepository = orderRepository;
         this.cartService = cartService;
         this.workflowClient = workflowClient;
@@ -72,8 +71,8 @@ public class CheckOutService {
                     url,
                     HttpMethod.GET,
                     null,
-                    new org.springframework.core.ParameterizedTypeReference<List<ProductDTO>>() {}
-            );
+                    new org.springframework.core.ParameterizedTypeReference<List<ProductDTO>>() {
+                    });
 
             if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
 
@@ -95,11 +94,13 @@ public class CheckOutService {
                     // Try to get quantity, handling both Long and String keys in the map
                     Integer quantity = productQuantities.get(product.getId());
                     if (quantity == null) {
-                        logger.warn("Product ID {} returned by inventory but not found in original request map or quantity is null", product.getId());
+                        logger.warn(
+                                "Product ID {} returned by inventory but not found in original request map or quantity is null",
+                                product.getId());
                         continue;
                     }
 
-                    logger.info("Adding item to order: productId={}, quantity={}, name={}", 
+                    logger.info("Adding item to order: productId={}, quantity={}, name={}",
                             product.getId(), quantity, product.getName());
 
                     CartItem cartItem = cartItemMap.get(product.getId());
@@ -114,8 +115,7 @@ public class CheckOutService {
                             product.getName(),
                             quantity,
                             product.getPrice(),
-                            imageUrl
-                    );
+                            imageUrl);
 
                     if (order.getImageUrl() == null) {
                         order.setImageUrl(imageUrl);
@@ -126,7 +126,7 @@ public class CheckOutService {
                 }
 
                 if (order.getItems().isEmpty()) {
-                    logger.error("No items were added to the order! productQuantities: {}, products fetched: {}", 
+                    logger.error("No items were added to the order! productQuantities: {}, products fetched: {}",
                             productQuantities, products.stream().map(ProductDTO::getId).collect(Collectors.toList()));
                 }
 
@@ -136,7 +136,8 @@ public class CheckOutService {
 
                 logger.info("Saving order: {}", orderNumber);
                 Order savedOrder = orderRepository.saveAndFlush(order);
-                logger.info("Order saved successfully: {} with id: {}", savedOrder.getOrderNumber(), savedOrder.getId());
+                logger.info("Order saved successfully: {} with id: {}", savedOrder.getOrderNumber(),
+                        savedOrder.getId());
 
                 try {
                     notificationService.sendOrderNotificationToAdmins("one order received");
@@ -177,8 +178,7 @@ public class CheckOutService {
         Map<Long, Integer> productQuantities = cartItems.stream()
                 .collect(Collectors.toMap(
                         CartItem::getProductId,
-                        CartItem::getQuantity
-                ));
+                        CartItem::getQuantity));
 
         OrderFulfillmentResult result;
         try {
@@ -267,7 +267,8 @@ public class CheckOutService {
                 Map<String, Integer> requestBody = Map.of("quantity", item.getQuantity());
                 HttpEntity<Map<String, Integer>> request = new HttpEntity<>(requestBody);
                 restTemplate.exchange(url, HttpMethod.POST, request, Map.class);
-                logger.info("Released {} stock for product {} (order {})", item.getQuantity(), item.getProductId(), orderNumber);
+                logger.info("Released {} stock for product {} (order {})", item.getQuantity(), item.getProductId(),
+                        orderNumber);
             } catch (Exception e) {
                 logger.error("Failed to release stock for product {}: {}", item.getProductId(), e.getMessage());
             }
@@ -304,7 +305,8 @@ public class CheckOutService {
         orderRepository.delete(order);
         logger.info("Deleted order: {}", orderNumber);
     }
-    public boolean hasUserPurchasedProduct(String userId, Long productId){
+
+    public boolean hasUserPurchasedProduct(String userId, Long productId) {
         return orderRepository.hasUserPurchasedProduct(userId, productId);
     }
 }

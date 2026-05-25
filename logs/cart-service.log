@@ -12,13 +12,14 @@
 [INFO] Copying 0 resource from src/main/resources to target/classes
 [INFO] 
 [INFO] --- compiler:3.11.0:compile (default-compile) @ cart-service ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module! :input tree
+[INFO] Compiling 29 source files with javac [debug release 17] to target/classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ cart-service ---
 [INFO] skip non existing resourceDirectory /Users/kalyanimogre/shop/cart-service/src/test/resources
 [INFO] 
 [INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ cart-service ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module! :dependency
 [INFO] 
 [INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ cart-service <<<
 [INFO] 
@@ -34,37 +35,37 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.5)
 
-2026-05-19T18:13:38.538+05:30  INFO 41919 --- [           main] org.example.CartApplication              : Starting CartApplication using Java 17.0.18 with PID 41919 (/Users/kalyanimogre/shop/cart-service/target/classes started by kalyanimogre in /Users/kalyanimogre/shop/cart-service)
-2026-05-19T18:13:38.539+05:30  INFO 41919 --- [           main] org.example.CartApplication              : No active profile set, falling back to 1 default profile: "default"
-2026-05-19T18:13:38.877+05:30  INFO 41919 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-19T18:13:38.905+05:30  INFO 41919 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
-2026-05-19T18:13:39.163+05:30  INFO 41919 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
-2026-05-19T18:13:39.168+05:30  INFO 41919 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-19T18:13:39.169+05:30  INFO 41919 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-05-19T18:13:39.201+05:30  INFO 41919 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-05-19T18:13:39.201+05:30  INFO 41919 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 644 ms
-2026-05-19T18:13:39.276+05:30  INFO 41919 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-19T18:13:39.300+05:30  INFO 41919 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-05-19T18:13:39.313+05:30  INFO 41919 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-19T18:13:39.409+05:30  INFO 41919 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-19T18:13:39.420+05:30  INFO 41919 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-19T18:13:39.522+05:30  INFO 41919 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@39ace1a7
-2026-05-19T18:13:39.523+05:30  INFO 41919 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-19T18:13:39.541+05:30  WARN 41919 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-05-19T18:13:39.951+05:30  INFO 41919 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-19T18:13:40.022+05:30  INFO 41919 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-19T18:13:40.157+05:30  INFO 41919 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-19T18:13:40.586+05:30  INFO 41919 --- [           main] i.t.s.WorkflowServiceStubsImpl           : Created WorkflowServiceStubs for channel: ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=1, target=localhost:7233}}
-2026-05-19T18:13:40.655+05:30  WARN 41919 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-19T18:13:40.663+05:30  WARN 41919 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+2026-05-25T16:24:43.889+05:30  INFO 38757 --- [           main] org.example.CartApplication              : Starting CartApplication using Java 17.0.18 with PID 38757 (/Users/kalyanimogre/shop/cart-service/target/classes started by kalyanimogre in /Users/kalyanimogre/shop/cart-service)
+2026-05-25T16:24:43.890+05:30  INFO 38757 --- [           main] org.example.CartApplication              : No active profile set, falling back to 1 default profile: "default"
+2026-05-25T16:24:44.246+05:30  INFO 38757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-25T16:24:44.280+05:30  INFO 38757 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2026-05-25T16:24:44.584+05:30  INFO 38757 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-05-25T16:24:44.593+05:30  INFO 38757 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-25T16:24:44.594+05:30  INFO 38757 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-25T16:24:44.641+05:30  INFO 38757 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-25T16:24:44.641+05:30  INFO 38757 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 727 ms
+2026-05-25T16:24:45.003+05:30  INFO 38757 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-25T16:24:45.127+05:30  INFO 38757 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-25T16:24:45.148+05:30  INFO 38757 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-25T16:24:45.320+05:30  INFO 38757 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-25T16:24:45.333+05:30  INFO 38757 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-25T16:24:45.457+05:30  INFO 38757 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60a01cb
+2026-05-25T16:24:45.457+05:30  INFO 38757 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-25T16:24:45.486+05:30  WARN 38757 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25T16:24:45.994+05:30  INFO 38757 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-25T16:24:46.096+05:30  INFO 38757 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-25T16:24:46.247+05:30  INFO 38757 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-25T16:24:46.750+05:30  INFO 38757 --- [           main] i.t.s.WorkflowServiceStubsImpl           : Created WorkflowServiceStubs for channel: ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=1, target=localhost:7233}}
+2026-05-25T16:24:46.824+05:30  WARN 38757 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25T16:24:46.832+05:30  WARN 38757 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: c39c0b87-05be-45f4-a94d-54f7b441fafa
+Using generated security password: 562d16f4-2e2b-40a5-adce-b7aa22b34212
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-19T18:13:40.771+05:30  INFO 41919 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44cd3ea9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@352df548, org.springframework.security.web.context.SecurityContextHolderFilter@5f58ac11, org.springframework.security.web.header.HeaderWriterFilter@5fc4af25, org.springframework.web.filter.CorsFilter@45dc4d1a, org.springframework.security.web.authentication.logout.LogoutFilter@78571a17, org.example.config.JwtAuthFilter@22ad1bae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1768c77f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bb0dcb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dbcc8ce, org.springframework.security.web.session.SessionManagementFilter@2c84d6c4, org.springframework.security.web.access.ExceptionTranslationFilter@416dd4d8, org.springframework.security.web.access.intercept.AuthorizationFilter@550482aa]
-2026-05-19T18:13:41.212+05:30  INFO 41919 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
-2026-05-19T18:13:41.234+05:30  INFO 41919 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+2026-05-25T16:24:46.943+05:30  INFO 38757 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69ab1abc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22f10ff6, org.springframework.security.web.context.SecurityContextHolderFilter@16f108a4, org.springframework.security.web.header.HeaderWriterFilter@6b951ee5, org.springframework.web.filter.CorsFilter@6ff185a3, org.springframework.security.web.authentication.logout.LogoutFilter@798ca706, org.example.config.JwtAuthFilter@32456db0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e00ad90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b4f1512, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@320d98f5, org.springframework.security.web.session.SessionManagementFilter@14eae244, org.springframework.security.web.access.ExceptionTranslationFilter@48f9f1d6, org.springframework.security.web.access.intercept.AuthorizationFilter@3edea9e6]
+2026-05-25T16:24:47.410+05:30  INFO 38757 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2026-05-25T16:24:47.433+05:30  INFO 38757 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -158,11 +159,11 @@ This generated password is for development use only. Your security configuration
 	ssl.truststore.type = JKS
 	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-2026-05-19T18:13:41.323+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-05-19T18:13:41.323+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-05-19T18:13:41.323+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779194621323
-2026-05-19T18:13:41.325+05:30  INFO 41919 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Subscribed to topic(s): stock.update-response
-2026-05-19T18:13:41.329+05:30  INFO 41919 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+2026-05-25T16:24:47.523+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-05-25T16:24:47.523+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-05-25T16:24:47.523+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779706487522
+2026-05-25T16:24:47.524+05:30  INFO 38757 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Subscribed to topic(s): stock.update-response
+2026-05-25T16:24:47.529+05:30  INFO 38757 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -256,11 +257,11 @@ This generated password is for development use only. Your security configuration
 	ssl.truststore.type = JKS
 	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-2026-05-19T18:13:41.332+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-05-19T18:13:41.332+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-05-19T18:13:41.332+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779194621332
-2026-05-19T18:13:41.332+05:30  INFO 41919 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Subscribed to topic(s): stock.updated
-2026-05-19T18:13:41.333+05:30  INFO 41919 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+2026-05-25T16:24:47.532+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-05-25T16:24:47.532+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-05-25T16:24:47.532+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779706487532
+2026-05-25T16:24:47.532+05:30  INFO 38757 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Subscribed to topic(s): stock.updated
+2026-05-25T16:24:47.533+05:30  INFO 38757 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -354,11 +355,11 @@ This generated password is for development use only. Your security configuration
 	ssl.truststore.type = JKS
 	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-2026-05-19T18:13:41.335+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-05-19T18:13:41.335+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-05-19T18:13:41.335+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779194621335
-2026-05-19T18:13:41.335+05:30  INFO 41919 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Subscribed to topic(s): cart.item-added
-2026-05-19T18:13:41.336+05:30  INFO 41919 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+2026-05-25T16:24:47.535+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-05-25T16:24:47.535+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-05-25T16:24:47.535+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779706487535
+2026-05-25T16:24:47.535+05:30  INFO 38757 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Subscribed to topic(s): cart.item-added
+2026-05-25T16:24:47.536+05:30  INFO 38757 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -452,63 +453,189 @@ This generated password is for development use only. Your security configuration
 	ssl.truststore.type = JKS
 	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-2026-05-19T18:13:41.338+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-05-19T18:13:41.338+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-05-19T18:13:41.338+05:30  INFO 41919 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779194621338
-2026-05-19T18:13:41.338+05:30  INFO 41919 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Subscribed to topic(s): stock.check-response
-2026-05-19T18:13:41.343+05:30  INFO 41919 --- [           main] org.example.CartApplication              : Started CartApplication in 2.964 seconds (process running for 3.127)
-2026-05-19T18:13:41.481+05:30  INFO 41919 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
-2026-05-19T18:13:41.481+05:30  INFO 41919 --- [ntainer#3-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
-2026-05-19T18:13:41.481+05:30  INFO 41919 --- [ntainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
-2026-05-19T18:13:41.481+05:30  INFO 41919 --- [ntainer#2-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
-2026-05-19T18:13:41.489+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
-2026-05-19T18:13:41.489+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
-2026-05-19T18:13:41.489+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
-2026-05-19T18:13:41.489+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
-2026-05-19T18:13:41.490+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] (Re-)joining group
-2026-05-19T18:13:41.490+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] (Re-)joining group
-2026-05-19T18:13:41.490+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] (Re-)joining group
-2026-05-19T18:13:41.491+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] (Re-)joining group
-2026-05-19T18:13:41.531+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Request joining group due to: need to re-join with the given member-id: consumer-cart-group-3-39c0495a-5793-4b0b-9b8e-8a2290cfd8a4
-2026-05-19T18:13:41.531+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Request joining group due to: need to re-join with the given member-id: consumer-cart-group-2-1183df74-bca6-4fe8-ab97-7d21a1c6882a
-2026-05-19T18:13:41.531+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Request joining group due to: need to re-join with the given member-id: consumer-cart-group-1-4a2efc36-7ce9-4ca0-b82b-0b7dfc14900c
-2026-05-19T18:13:41.531+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Request joining group due to: need to re-join with the given member-id: consumer-cart-group-4-1188dabb-8bd2-4a38-b825-6a8c5d0a3a44
-2026-05-19T18:13:41.531+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
-2026-05-19T18:13:41.531+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
-2026-05-19T18:13:41.532+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] (Re-)joining group
-2026-05-19T18:13:41.532+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] (Re-)joining group
-2026-05-19T18:13:41.532+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
-2026-05-19T18:13:41.532+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
-2026-05-19T18:13:41.532+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] (Re-)joining group
-2026-05-19T18:13:41.532+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] (Re-)joining group
-2026-05-19T18:14:16.201+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Successfully joined group with generation Generation{generationId=203, memberId='consumer-cart-group-4-1188dabb-8bd2-4a38-b825-6a8c5d0a3a44', protocol='range'}
-2026-05-19T18:14:16.201+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Successfully joined group with generation Generation{generationId=203, memberId='consumer-cart-group-1-4a2efc36-7ce9-4ca0-b82b-0b7dfc14900c', protocol='range'}
-2026-05-19T18:14:16.201+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Successfully joined group with generation Generation{generationId=203, memberId='consumer-cart-group-3-39c0495a-5793-4b0b-9b8e-8a2290cfd8a4', protocol='range'}
-2026-05-19T18:14:16.201+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Successfully joined group with generation Generation{generationId=203, memberId='consumer-cart-group-2-1183df74-bca6-4fe8-ab97-7d21a1c6882a', protocol='range'}
-2026-05-19T18:14:16.242+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Finished assignment for group at generation 203: {consumer-cart-group-1-4a2efc36-7ce9-4ca0-b82b-0b7dfc14900c=Assignment(partitions=[stock.update-response-0]), consumer-cart-group-2-1183df74-bca6-4fe8-ab97-7d21a1c6882a=Assignment(partitions=[stock.updated-0]), consumer-cart-group-3-39c0495a-5793-4b0b-9b8e-8a2290cfd8a4=Assignment(partitions=[cart.item-added-0]), consumer-cart-group-4-1188dabb-8bd2-4a38-b825-6a8c5d0a3a44=Assignment(partitions=[stock.check-response-0])}
-2026-05-19T18:14:16.261+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Successfully synced group in generation Generation{generationId=203, memberId='consumer-cart-group-1-4a2efc36-7ce9-4ca0-b82b-0b7dfc14900c', protocol='range'}
-2026-05-19T18:14:16.261+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Successfully synced group in generation Generation{generationId=203, memberId='consumer-cart-group-4-1188dabb-8bd2-4a38-b825-6a8c5d0a3a44', protocol='range'}
-2026-05-19T18:14:16.261+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Successfully synced group in generation Generation{generationId=203, memberId='consumer-cart-group-3-39c0495a-5793-4b0b-9b8e-8a2290cfd8a4', protocol='range'}
-2026-05-19T18:14:16.261+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Successfully synced group in generation Generation{generationId=203, memberId='consumer-cart-group-2-1183df74-bca6-4fe8-ab97-7d21a1c6882a', protocol='range'}
-2026-05-19T18:14:16.262+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Notifying assignor about the new Assignment(partitions=[stock.update-response-0])
-2026-05-19T18:14:16.262+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Notifying assignor about the new Assignment(partitions=[stock.check-response-0])
-2026-05-19T18:14:16.262+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Notifying assignor about the new Assignment(partitions=[stock.updated-0])
-2026-05-19T18:14:16.262+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Notifying assignor about the new Assignment(partitions=[cart.item-added-0])
-2026-05-19T18:14:16.265+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Adding newly assigned partitions: cart.item-added-0
-2026-05-19T18:14:16.265+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Adding newly assigned partitions: stock.updated-0
-2026-05-19T18:14:16.265+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Adding newly assigned partitions: stock.update-response-0
-2026-05-19T18:14:16.265+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Adding newly assigned partitions: stock.check-response-0
-2026-05-19T18:14:16.288+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Setting offset for partition stock.check-response-0 to the committed offset FetchPosition{offset=134, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=45}}
-2026-05-19T18:14:16.288+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Setting offset for partition cart.item-added-0 to the committed offset FetchPosition{offset=15, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=48}}
-2026-05-19T18:14:16.288+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Setting offset for partition stock.updated-0 to the committed offset FetchPosition{offset=92, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=30}}
-2026-05-19T18:14:16.288+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Setting offset for partition stock.update-response-0 to the committed offset FetchPosition{offset=95, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=30}}
-2026-05-19T18:14:16.289+05:30  INFO 41919 --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : cart-group: partitions assigned: [stock.update-response-0]
-2026-05-19T18:14:16.289+05:30  INFO 41919 --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : cart-group: partitions assigned: [stock.updated-0]
-2026-05-19T18:14:16.289+05:30  INFO 41919 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : cart-group: partitions assigned: [cart.item-added-0]
-2026-05-19T18:14:16.289+05:30  INFO 41919 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : cart-group: partitions assigned: [stock.check-response-0]
-2026-05-19T18:15:58.930+05:30  INFO 41919 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-19T18:15:58.931+05:30  INFO 41919 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-19T18:15:58.935+05:30  INFO 41919 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-05-25T16:24:47.538+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-05-25T16:24:47.538+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-05-25T16:24:47.538+05:30  INFO 38757 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779706487538
+2026-05-25T16:24:47.538+05:30  INFO 38757 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Subscribed to topic(s): stock.check-response
+2026-05-25T16:24:47.544+05:30  INFO 38757 --- [           main] org.example.CartApplication              : Started CartApplication in 3.996 seconds (process running for 4.169)
+2026-05-25T16:24:47.681+05:30  INFO 38757 --- [ntainer#2-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
+2026-05-25T16:24:47.681+05:30  INFO 38757 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
+2026-05-25T16:24:47.681+05:30  INFO 38757 --- [ntainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
+2026-05-25T16:24:47.682+05:30  INFO 38757 --- [ntainer#3-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
+2026-05-25T16:24:47.695+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T16:24:47.695+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T16:24:47.695+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T16:24:47.695+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T16:24:47.697+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] (Re-)joining group
+2026-05-25T16:24:47.697+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] (Re-)joining group
+2026-05-25T16:24:47.698+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] (Re-)joining group
+2026-05-25T16:24:47.698+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] (Re-)joining group
+2026-05-25T16:24:47.783+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Request joining group due to: need to re-join with the given member-id: consumer-cart-group-1-0a174dcc-8c61-46c5-ac3d-308f5b5d3cd4
+2026-05-25T16:24:47.787+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Request joining group due to: need to re-join with the given member-id: consumer-cart-group-3-f1c61a55-91d3-4bd5-a82a-6d165104ec07
+2026-05-25T16:24:47.787+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Request joining group due to: need to re-join with the given member-id: consumer-cart-group-4-c1c6a63d-0f40-419f-8d7b-0552204f8cfc
+2026-05-25T16:24:47.789+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-25T16:24:47.789+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] (Re-)joining group
+2026-05-25T16:24:47.789+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-25T16:24:47.789+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] (Re-)joining group
+2026-05-25T16:24:47.790+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-25T16:24:47.790+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] (Re-)joining group
+2026-05-25T16:24:47.791+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Request joining group due to: need to re-join with the given member-id: consumer-cart-group-2-e02e9576-2835-4358-a38e-f9de81cf8460
+2026-05-25T16:24:47.792+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-25T16:24:47.792+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] (Re-)joining group
+2026-05-25T16:24:47.863+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Successfully joined group with generation Generation{generationId=214, memberId='consumer-cart-group-2-e02e9576-2835-4358-a38e-f9de81cf8460', protocol='range'}
+2026-05-25T16:24:47.863+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Successfully joined group with generation Generation{generationId=214, memberId='consumer-cart-group-3-f1c61a55-91d3-4bd5-a82a-6d165104ec07', protocol='range'}
+2026-05-25T16:24:47.864+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Successfully joined group with generation Generation{generationId=214, memberId='consumer-cart-group-1-0a174dcc-8c61-46c5-ac3d-308f5b5d3cd4', protocol='range'}
+2026-05-25T16:24:47.864+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Successfully joined group with generation Generation{generationId=214, memberId='consumer-cart-group-4-c1c6a63d-0f40-419f-8d7b-0552204f8cfc', protocol='range'}
+2026-05-25T16:24:47.884+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Finished assignment for group at generation 214: {consumer-cart-group-3-f1c61a55-91d3-4bd5-a82a-6d165104ec07=Assignment(partitions=[cart.item-added-0]), consumer-cart-group-4-c1c6a63d-0f40-419f-8d7b-0552204f8cfc=Assignment(partitions=[stock.check-response-0]), consumer-cart-group-1-0a174dcc-8c61-46c5-ac3d-308f5b5d3cd4=Assignment(partitions=[stock.update-response-0]), consumer-cart-group-2-e02e9576-2835-4358-a38e-f9de81cf8460=Assignment(partitions=[stock.updated-0])}
+2026-05-25T16:24:47.906+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Successfully synced group in generation Generation{generationId=214, memberId='consumer-cart-group-4-c1c6a63d-0f40-419f-8d7b-0552204f8cfc', protocol='range'}
+2026-05-25T16:24:47.906+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Successfully synced group in generation Generation{generationId=214, memberId='consumer-cart-group-1-0a174dcc-8c61-46c5-ac3d-308f5b5d3cd4', protocol='range'}
+2026-05-25T16:24:47.906+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Successfully synced group in generation Generation{generationId=214, memberId='consumer-cart-group-2-e02e9576-2835-4358-a38e-f9de81cf8460', protocol='range'}
+2026-05-25T16:24:47.906+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Notifying assignor about the new Assignment(partitions=[stock.check-response-0])
+2026-05-25T16:24:47.906+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Notifying assignor about the new Assignment(partitions=[stock.update-response-0])
+2026-05-25T16:24:47.906+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Successfully synced group in generation Generation{generationId=214, memberId='consumer-cart-group-3-f1c61a55-91d3-4bd5-a82a-6d165104ec07', protocol='range'}
+2026-05-25T16:24:47.906+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Notifying assignor about the new Assignment(partitions=[stock.updated-0])
+2026-05-25T16:24:47.906+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Notifying assignor about the new Assignment(partitions=[cart.item-added-0])
+2026-05-25T16:24:47.907+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Adding newly assigned partitions: stock.update-response-0
+2026-05-25T16:24:47.908+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Adding newly assigned partitions: cart.item-added-0
+2026-05-25T16:24:47.907+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Adding newly assigned partitions: stock.updated-0
+2026-05-25T16:24:47.907+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Adding newly assigned partitions: stock.check-response-0
+2026-05-25T16:24:47.953+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-1, groupId=cart-group] Setting offset for partition stock.update-response-0 to the committed offset FetchPosition{offset=111, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=33}}
+2026-05-25T16:24:47.953+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-2, groupId=cart-group] Setting offset for partition stock.updated-0 to the committed offset FetchPosition{offset=108, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=33}}
+2026-05-25T16:24:47.953+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-4, groupId=cart-group] Setting offset for partition stock.check-response-0 to the committed offset FetchPosition{offset=169, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=48}}
+2026-05-25T16:24:47.953+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-cart-group-3, groupId=cart-group] Setting offset for partition cart.item-added-0 to the committed offset FetchPosition{offset=15, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=51}}
+2026-05-25T16:24:47.954+05:30  INFO 38757 --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : cart-group: partitions assigned: [stock.update-response-0]
+2026-05-25T16:24:47.954+05:30  INFO 38757 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : cart-group: partitions assigned: [cart.item-added-0]
+2026-05-25T16:24:47.954+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : cart-group: partitions assigned: [stock.check-response-0]
+2026-05-25T16:24:47.954+05:30  INFO 38757 --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : cart-group: partitions assigned: [stock.updated-0]
+2026-05-25T16:25:31.577+05:30  INFO 38757 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25T16:25:31.577+05:30  INFO 38757 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-25T16:25:31.579+05:30  INFO 38757 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 where o1_0.order_number=?
+Hibernate: select i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price from oreder_items i1_0 where i1_0.order_id=?
+2026-05-25T16:25:31.758+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Deleted order: ORD-04764AC9
+Hibernate: delete from oreder_items where id=?
+Hibernate: delete from orders where id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+2026-05-25T16:25:43.590+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CartService         : Requesting stock check for productId: 13, quantity:1
+2026-05-25T16:25:43.591+05:30  INFO 38757 --- [nio-8082-exec-4] o.e.services.StockKafkaProducerService   : Sending stock check request: cartId=5, productId=13, quantity=1
+2026-05-25T16:25:43.604+05:30  INFO 38757 --- [nio-8082-exec-4] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2026-05-25T16:25:43.611+05:30  INFO 38757 --- [nio-8082-exec-4] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2026-05-25T16:25:43.624+05:30  INFO 38757 --- [nio-8082-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-05-25T16:25:43.624+05:30  INFO 38757 --- [nio-8082-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-05-25T16:25:43.624+05:30  INFO 38757 --- [nio-8082-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779706543616
+2026-05-25T16:25:43.637+05:30  INFO 38757 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
+2026-05-25T16:25:43.642+05:30  INFO 38757 --- [ad | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 10005 with epoch 0
+2026-05-25T16:25:43.649+05:30  INFO 38757 --- [nio-8082-exec-4] o.e.services.StockKafkaProducerService   : Stock check request sent successfully
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : =====================================
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Received stock check response
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : =====================================
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Cart ID: 5
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Product ID: 13
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Is Available: true
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Message: true
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Message :Stock available
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : =====================================
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] org.example.services.CartService         : Handling stock response for cart: 5
+2026-05-25T16:25:43.741+05:30  INFO 38757 --- [ntainer#1-0-C-1] org.example.services.CartService         : Product 13 is available
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=? and ci1_0.product_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=? and ci1_0.product_id=?
+Hibernate: insert into cart_items (cart_id,created_at,image_url,product_id,product_name,quantity,item_status,stock_quantity,"unit-price",updated_at) values (?,?,?,?,?,?,?,?,?,?)
+2026-05-25T16:25:43.773+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CartService         : Added new item to cart: Earings
 Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
 Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
 Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
@@ -524,22 +651,145 @@ Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.
 Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
 Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
 Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+2026-05-25T16:26:20.705+05:30  INFO 38757 --- [io-8082-exec-10] org.example.services.CheckOutService     : Starting checkout for user: cherry@gmail.com
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+2026-05-25T16:26:20.721+05:30  INFO 38757 --- [io-8082-exec-10] org.example.services.CheckOutService     : Calling workflow for userId: cherry@gmail.com
+2026-05-25T16:26:21.277+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Creating order directly for userId= cherry@gmail.com, productQuantities: {13=1}
+2026-05-25T16:26:21.277+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Fetching products for IDs: 13
+2026-05-25T16:26:21.294+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Fetched 1 products from inventory service
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+2026-05-25T16:26:21.301+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Found cart id=5 with 1 items for userId=cherry@gmail.com
+2026-05-25T16:26:21.301+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : CartItem: productId=13, imageUrl='https://tyaani.com/cdn/shop/products/TER80005MODEL_c0fcb416-4387-4632-b32f-68163d8996d8.jpg?v=1745579802&width=1500'
+2026-05-25T16:26:21.301+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Adding item to order: productId=13, quantity=1, name=Earings
+2026-05-25T16:26:21.301+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : OrderItem productId=13: cartImageUrl='https://tyaani.com/cdn/shop/products/TER80005MODEL_c0fcb416-4387-4632-b32f-68163d8996d8.jpg?v=1745579802&width=1500', productImageUrl='https://tyaani.com/cdn/shop/products/TER80005MODEL_c0fcb416-4387-4632-b32f-68163d8996d8.jpg?v=1745579802&width=1500', resolved='https://tyaani.com/cdn/shop/products/TER80005MODEL_c0fcb416-4387-4632-b32f-68163d8996d8.jpg?v=1745579802&width=1500'
+2026-05-25T16:26:21.301+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Saving order: ORD-BF8F60CC
+Hibernate: insert into orders (approved_by,created_at,image_url,order_number,status,total_amount,updated_at,user_id) values (?,?,?,?,?,?,?,?)
+Hibernate: insert into oreder_items (image_url,order_id,product_id,product_name,quantity,unit_price) values (?,?,?,?,?,?)
+2026-05-25T16:26:21.317+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Order saved successfully: ORD-BF8F60CC with id: 48
+2026-05-25T16:26:21.448+05:30  INFO 38757 --- [io-8082-exec-10] org.example.services.CheckOutService     : Workflow completed. Success: true, Message: Order fulfilled successfully, OrderNumber: ORD-BF8F60CC
+2026-05-25T16:26:21.452+05:30  INFO 38757 --- [io-8082-exec-10] org.example.services.OrderQueryService   : Fetching order with items (REQUIRES_NEW): ORD-BF8F60CC
+Hibernate: select o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.order_number=?
+2026-05-25T16:26:21.471+05:30  INFO 38757 --- [io-8082-exec-10] org.example.services.CheckOutService     : Order found on attempt 1: ORD-BF8F60CC
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+2026-05-25T16:26:21.481+05:30  INFO 38757 --- [io-8082-exec-10] org.example.services.CartService         : Cleared all items from cart: 5 for user: cherry@gmail.com
+2026-05-25T16:26:21.481+05:30  INFO 38757 --- [io-8082-exec-10] org.example.services.CheckOutService     : Checkout completed successfully. Order: ORD-BF8F60CC
+Hibernate: delete from cart_items where id=?
 Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
 Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
 Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
-2026-05-19T18:16:28.461+05:30  INFO 41919 --- [nio-8082-exec-7] org.example.services.CheckOutService     : Starting checkout for user: cherry@gmail.com
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
 Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
 Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  04:54 min
-[INFO] Finished at: 2026-05-19T18:18:31+05:30
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.5:run (default-cli) on project cart-service: Process terminated with exit code: 137 -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+2026-05-25T16:27:10.387+05:30  INFO 38757 --- [nio-8082-exec-6] org.example.services.CartService         : Requesting stock check for productId: 13, quantity:1
+2026-05-25T16:27:10.389+05:30  INFO 38757 --- [nio-8082-exec-6] o.e.services.StockKafkaProducerService   : Sending stock check request: cartId=5, productId=13, quantity=1
+2026-05-25T16:27:10.392+05:30  INFO 38757 --- [nio-8082-exec-6] o.e.services.StockKafkaProducerService   : Stock check request sent successfully
+2026-05-25T16:27:10.460+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : =====================================
+2026-05-25T16:27:10.460+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Received stock check response
+2026-05-25T16:27:10.460+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : =====================================
+2026-05-25T16:27:10.460+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Cart ID: 5
+2026-05-25T16:27:10.460+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Product ID: 13
+2026-05-25T16:27:10.460+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Is Available: true
+2026-05-25T16:27:10.461+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Message: true
+2026-05-25T16:27:10.461+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : Message :Stock available
+2026-05-25T16:27:10.461+05:30  INFO 38757 --- [ntainer#1-0-C-1] o.example.services.KafkaConsumerService  : =====================================
+2026-05-25T16:27:10.461+05:30  INFO 38757 --- [ntainer#1-0-C-1] org.example.services.CartService         : Handling stock response for cart: 5
+2026-05-25T16:27:10.461+05:30  INFO 38757 --- [ntainer#1-0-C-1] org.example.services.CartService         : Product 13 is available
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=? and ci1_0.product_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=? and ci1_0.product_id=?
+Hibernate: insert into cart_items (cart_id,created_at,image_url,product_id,product_name,quantity,item_status,stock_quantity,"unit-price",updated_at) values (?,?,?,?,?,?,?,?,?,?)
+2026-05-25T16:27:10.500+05:30  INFO 38757 --- [nio-8082-exec-6] org.example.services.CartService         : Added new item to cart: Earings
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+2026-05-25T16:27:35.169+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Starting checkout for user: cherry@gmail.com
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+2026-05-25T16:27:35.182+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Calling workflow for userId: cherry@gmail.com
+2026-05-25T16:27:35.400+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CheckOutService     : Creating order directly for userId= cherry@gmail.com, productQuantities: {13=1}
+2026-05-25T16:27:35.400+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CheckOutService     : Fetching products for IDs: 13
+2026-05-25T16:27:35.410+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CheckOutService     : Fetched 1 products from inventory service
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+2026-05-25T16:27:35.413+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CheckOutService     : Found cart id=5 with 1 items for userId=cherry@gmail.com
+2026-05-25T16:27:35.413+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CheckOutService     : CartItem: productId=13, imageUrl='https://tyaani.com/cdn/shop/products/TER80005MODEL_c0fcb416-4387-4632-b32f-68163d8996d8.jpg?v=1745579802&width=1500'
+2026-05-25T16:27:35.413+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CheckOutService     : Adding item to order: productId=13, quantity=1, name=Earings
+2026-05-25T16:27:35.413+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CheckOutService     : OrderItem productId=13: cartImageUrl='https://tyaani.com/cdn/shop/products/TER80005MODEL_c0fcb416-4387-4632-b32f-68163d8996d8.jpg?v=1745579802&width=1500', productImageUrl='https://tyaani.com/cdn/shop/products/TER80005MODEL_c0fcb416-4387-4632-b32f-68163d8996d8.jpg?v=1745579802&width=1500', resolved='https://tyaani.com/cdn/shop/products/TER80005MODEL_c0fcb416-4387-4632-b32f-68163d8996d8.jpg?v=1745579802&width=1500'
+2026-05-25T16:27:35.413+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CheckOutService     : Saving order: ORD-49A28DFC
+Hibernate: insert into orders (approved_by,created_at,image_url,order_number,status,total_amount,updated_at,user_id) values (?,?,?,?,?,?,?,?)
+Hibernate: insert into oreder_items (image_url,order_id,product_id,product_name,quantity,unit_price) values (?,?,?,?,?,?)
+2026-05-25T16:27:35.418+05:30  INFO 38757 --- [nio-8082-exec-4] org.example.services.CheckOutService     : Order saved successfully: ORD-49A28DFC with id: 49
+2026-05-25T16:27:35.457+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Workflow completed. Success: true, Message: Order fulfilled successfully, OrderNumber: ORD-49A28DFC
+2026-05-25T16:27:35.457+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.OrderQueryService   : Fetching order with items (REQUIRES_NEW): ORD-49A28DFC
+Hibernate: select o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.order_number=?
+2026-05-25T16:27:35.460+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Order found on attempt 1: ORD-49A28DFC
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+2026-05-25T16:27:35.462+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CartService         : Cleared all items from cart: 5 for user: cherry@gmail.com
+2026-05-25T16:27:35.462+05:30  INFO 38757 --- [nio-8082-exec-1] org.example.services.CheckOutService     : Checkout completed successfully. Order: ORD-49A28DFC
+Hibernate: delete from cart_items where id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
+Hibernate: select c1_0.id,c1_0.created_at,c1_0.updated_at,c1_0.user_id from carts c1_0 where c1_0.user_id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select ci1_0.id,ci1_0.cart_id,ci1_0.created_at,ci1_0.image_url,ci1_0.product_id,ci1_0.product_name,ci1_0.quantity,ci1_0.item_status,ci1_0.stock_quantity,ci1_0."unit-price",ci1_0.updated_at from cart_items ci1_0 left join carts c1_0 on c1_0.id=ci1_0.cart_id where c1_0.id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id order by o1_0.created_at desc
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id order by o1_0.created_at desc
+Hibernate: select o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.order_number=?
+Hibernate: update orders set approved_by=?,created_at=?,image_url=?,order_number=?,status=?,total_amount=?,updated_at=?,user_id=? where id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id order by o1_0.created_at desc
+Hibernate: select o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.order_number=?
+Hibernate: update orders set approved_by=?,created_at=?,image_url=?,order_number=?,status=?,total_amount=?,updated_at=?,user_id=? where id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id order by o1_0.created_at desc
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
+Hibernate: select o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.order_number=?
+Hibernate: select o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.order_number=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
+Hibernate: select distinct o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.user_id=?
+Hibernate: select o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.order_number=?
+Hibernate: select o1_0.id,o1_0.approved_by,o1_0.created_at,o1_0.image_url,i1_0.order_id,i1_0.id,i1_0.image_url,i1_0.product_id,i1_0.product_name,i1_0.quantity,i1_0.unit_price,o1_0.order_number,o1_0.status,o1_0.total_amount,o1_0.updated_at,o1_0.user_id from orders o1_0 left join oreder_items i1_0 on o1_0.id=i1_0.order_id where o1_0.order_number=?

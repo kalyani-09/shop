@@ -17,7 +17,8 @@ public class CheckOutController {
     private final CheckOutService checkOutService;
     private final org.example.services.NotificationService notificationService;
 
-    public CheckOutController(CheckOutService checkOutService, org.example.services.NotificationService notificationService) {
+    public CheckOutController(CheckOutService checkOutService,
+            org.example.services.NotificationService notificationService) {
         this.checkOutService = checkOutService;
         this.notificationService = notificationService;
     }
@@ -155,7 +156,7 @@ public class CheckOutController {
     @GetMapping("/cart/internal/verify-purchase")
     public ResponseEntity<Map<String, Object>> verifyPurchase(
             @RequestParam Long productId,
-            @RequestParam String userEmail){
+            @RequestParam String userEmail) {
         boolean purchased = checkOutService.hasUserPurchasedProduct(userEmail, productId);
         return ResponseEntity.ok(Map.of("purchased", purchased));
     }

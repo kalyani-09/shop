@@ -27,7 +27,7 @@ function App() {
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
-        
+
         {/* Protected Routes */}
         <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
         <Route path="/admin/orders" element={<ProtectedRoute><AdminOrders /></ProtectedRoute>} />
@@ -36,7 +36,7 @@ function App() {
         <Route path="/cart" element={<ProtectedRoute><AddToCart /></ProtectedRoute>} />
         <Route path="/checkout" element={<ProtectedRoute><CheckoutPage /></ProtectedRoute>} />
         <Route path="/final" element={<ProtectedRoute><FinalPage /></ProtectedRoute>} />
-        
+
         {/* Public Routes */}
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/login" element={<Login />} />
