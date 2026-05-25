@@ -47,13 +47,18 @@ public class JwtAuthGlobalFilter implements GlobalFilter, Ordered {
 
         String authHeader = exchange.getRequest().getHeaders()
                 .getFirst(HttpHeaders.AUTHORIZATION);
+        String token = null;
 
-        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+            token = authHeader.substring(7);
+        } else {
+            token = exchange.getRequest().getQueryParams().getFirst("token");
+        }
+
+        if (token == null) {
             exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
             return exchange.getResponse().setComplete();
         }
-
-        String token = authHeader.substring(7);
 
         try {
             Claims claims = Jwts.parserBuilder()
