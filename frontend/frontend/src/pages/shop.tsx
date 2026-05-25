@@ -34,7 +34,7 @@ export default function Shop() {
           price: item.price,
           oldPrice: item.price * 1.2,
           stock: item.stockQuantity,
-          rating: item.rating || 4.5,
+          rating: item.averageRating !== undefined && item.averageRating !== null ? item.averageRating : 4.5,
           image: item.imageURL || '',
           description: item.description,
         }));

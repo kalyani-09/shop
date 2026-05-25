@@ -108,7 +108,7 @@ export default function Admin() {
           price: item.price,
           oldPrice: item.price,
           stock: item.stockQuantity,
-          rating: 0,
+          rating: item.averageRating !== undefined && item.averageRating !== null ? item.averageRating : 4.5,
           image: item.imageURL || '',
           description: item.description,
         }));

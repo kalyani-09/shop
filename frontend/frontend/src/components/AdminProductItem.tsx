@@ -48,7 +48,28 @@ export const AdminProductItem: React.FC<AdminProductItemProps> = ({
             </>
           )}
         </div>
-
+        
+        {variant === 'cart' && onUpdateQuantity && (
+          <div className="flex items-center bg-slate-50 border border-slate-200 rounded-full p-0.5 shadow-sm w-fit mt-2">
+            <button
+              onClick={() => onUpdateQuantity(product.id, Math.max(1, quantity - 1))}
+              className="w-8 h-8 flex items-center justify-center rounded-full text-slate-600 hover:bg-white hover:text-indigo-600 hover:shadow-sm transition-all"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20 12H4" />
+              </svg>
+            </button>
+            <span className="w-8 text-center font-bold text-slate-900 text-sm">{quantity}</span>
+            <button
+              onClick={() => onUpdateQuantity(product.id, Math.min(product.stock, quantity + 1))}
+              className="w-8 h-8 flex items-center justify-center rounded-full text-slate-600 hover:bg-white hover:text-indigo-600 hover:shadow-sm transition-all"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="flex flex-col items-end gap-2">

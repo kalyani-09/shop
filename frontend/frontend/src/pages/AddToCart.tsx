@@ -48,7 +48,7 @@ export default function AddToCart() {
           price: item.price,
           image: item.imageURL || '',
           stock: item.stockQuantity,
-          rating: item.rating || 4.5,
+          rating: item.averageRating !== undefined && item.averageRating !== null ? item.averageRating : 4.5,
           description: item.description
         };
       });
