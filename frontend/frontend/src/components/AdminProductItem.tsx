@@ -49,54 +49,6 @@ export const AdminProductItem: React.FC<AdminProductItemProps> = ({
           )}
         </div>
 
-        {variant === 'admin' && (
-          <div className="mt-3 flex items-center gap-3">
-             <div className="flex items-center bg-slate-50 rounded-lg p-0.5 border border-slate-100">
-              <button 
-                onClick={() => onUpdateQuantity?.(product.id, Math.max(0, product.stock - 1))}
-                className="w-7 h-7 flex items-center justify-center rounded-md hover:bg-white hover:shadow-sm transition-all text-slate-500"
-              >
-                <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="3">
-                  <path d="M20 12H4" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-              <span className="w-10 text-center text-xs font-bold text-slate-700">{product.stock}</span>
-              <button 
-                onClick={() => onUpdateQuantity?.(product.id, product.stock + 1)}
-                className="w-7 h-7 flex items-center justify-center rounded-md hover:bg-white hover:shadow-sm transition-all text-slate-500"
-              >
-                <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="3">
-                  <path d="M12 4v16m8-8H4" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-            </div>
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tight">Adjust Stock</span>
-          </div>
-        )}
-
-        {variant === 'cart' && (
-          <div className="mt-4 flex items-center gap-4">
-            <div className="flex items-center bg-slate-50 rounded-full p-1 border border-slate-100">
-              <button 
-                onClick={() => onUpdateQuantity?.(product.id, Math.max(1, quantity - 1))}
-                className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white hover:shadow-sm transition-all text-slate-600"
-              >
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M20 12H4" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-              <span className="w-8 text-center text-sm font-bold text-slate-900">{quantity}</span>
-              <button 
-                onClick={() => onUpdateQuantity?.(product.id, quantity + 1)}
-                className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white hover:shadow-sm transition-all text-slate-600"
-              >
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M12 4v16m8-8H4" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        )}
       </div>
 
       <div className="flex flex-col items-end gap-2">
