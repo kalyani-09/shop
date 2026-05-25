@@ -192,7 +192,7 @@ export default function ProductDetails() {
       fetchRating();
     } catch (err: any) {
       console.error("Error submitting review:", err);
-      const errMsg = err.response?.data?.error || "Failed to submit review. Make sure you have purchased this product.";
+      const errMsg = err.response?.data?.error || "Failed to submit review.";
       toast.error(errMsg);
     } finally {
       setSubmittingReview(false);
@@ -454,9 +454,6 @@ export default function ProductDetails() {
                   </div>
                   <span className="text-sm font-semibold text-slate-700">({reviewsCount} reviews)</span>
                 </div>
-                <p className="text-sm text-slate-500 mb-6 leading-relaxed">
-                  Only verified purchasers can leave reviews for this product.
-                </p>
 
                 {isAuthenticated ? (
                   <button 
@@ -598,7 +595,7 @@ export default function ProductDetails() {
                       <span className="text-4xl">💬</span>
                       <h5 className="text-lg font-bold text-slate-900 mt-4 mb-2">No reviews yet</h5>
                       <p className="text-sm text-slate-500 max-w-sm mx-auto">
-                        Have you purchased this product? Be the first to write a review and help others make a decision!
+                        Be the first to write a review and help others make a decision!
                       </p>
                     </div>
                   ) : (

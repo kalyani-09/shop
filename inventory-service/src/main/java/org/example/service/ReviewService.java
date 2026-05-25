@@ -10,14 +10,11 @@ import org.example.repository.ProductRepository;
 import org.example.repository.ReviewRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
-import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -27,16 +24,11 @@ public class ReviewService {
 
     private final ReviewRepository reviewRepository;
     private final ProductRepository productRepository;
-    private final RestTemplate restTemplate;
-
-    @Value("${cart.service.url}")
-    private String cartServiceUrl;
 
     public ReviewService(ReviewRepository reviewRepository,
-                         ProductRepository productRepository, RestTemplate restTemplate){
+                         ProductRepository productRepository){
         this.reviewRepository = reviewRepository;
         this.productRepository = productRepository;
-        this.restTemplate = restTemplate;
     }
 
     public Page<ReviewResponse> getReviewsByProduct(Long productId, int page , int size){
@@ -68,10 +60,6 @@ public class ReviewService {
             throw new RuntimeException("You have already reviewed this product");
         }
 
-        //Verify purchase
-        if(!hasUserPurchased(productId, userEmail)){
-           throw new RuntimeException("You must purchase this product before reviewing");
-        }
 
         //Save review
         Review review = new Review();
@@ -121,17 +109,6 @@ public class ReviewService {
         return true;
     }
 
-    private boolean hasUserPurchased(Long productId, String userEmail){
-        try{
-            String url = cartServiceUrl + "/cart/internal/verify-purchase?productId=" + productId + "&userEmail=" +userEmail;
-            @SuppressWarnings("unchecked")
-            Map<String,Object> response = restTemplate.getForObject(url, Map.class);
-            return response != null && Boolean.TRUE.equals(response.get("purchased"));
-        }catch(Exception e){
-            log.error("Failed to verify purchase for product {} user {} :{}", productId, userEmail, e.getMessage());
-            return false;
-        }
-    }
 
     private void updateProductRating(Long productId){
         Double avg = reviewRepository.findAverageRatingByProductId(productId);

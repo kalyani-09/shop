@@ -1,29 +1,11 @@
 [INFO] Scanning for projects...
-Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/maven-metadata.xml
-Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/maven-metadata.xml
-Downloading from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/maven-metadata.xml
-Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/maven-metadata.xml
-Progress (1): 234 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/maven-metadata.xml (234 B at 610 B/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/maven-metadata.xml
-Progress (1): 375 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/maven-metadata.xml (375 B at 10 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/liquibase/maven-metadata.xml
-Progress (1): 394 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/liquibase/maven-metadata.xml (394 B at 9.8 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/maven-metadata.xml
-Progress (1): 242 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/maven-metadata.xml (242 B at 4.4 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
-Progress (1): 4.6 kBProgress (1): 9.7 kBProgress (1): 14 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 264 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
-Progress (1): 3.1 kBProgress (1): 7.7 kBProgress (1): 12 kB Progress (1): 17 kBProgress (1): 20 kBProgress (1): 21 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 227 kB/s)
-Progress (1): 398 BProgress (2): 398 B | 249 B                           Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/maven-metadata.xml (398 B at 340 B/s)
-Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/maven-metadata.xml (249 B at 210 B/s)
-Progress (1): 255 B                   Downloaded from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/maven-metadata.xml (255 B at 119 B/s)
 [INFO] 
 [INFO] -------------------< org.example:inventory-service >--------------------
 [INFO] Building inventory-service 1.0-SNAPSHOT
 [INFO]   from pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] >>> spring-boot:4.0.5:run (default-cli) > test-compile @ inventory-service >>>
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ inventory-service >>>
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ inventory-service ---
 [INFO] Copying 1 resource from src/main/resources to target/classes
@@ -38,10 +20,10 @@ Progress (1): 255 B                   Downloaded from central: https://repo.ma
 [INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ inventory-service ---
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
-[INFO] <<< spring-boot:4.0.5:run (default-cli) < test-compile @ inventory-service <<<
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ inventory-service <<<
 [INFO] 
 [INFO] 
-[INFO] --- spring-boot:4.0.5:run (default-cli) @ inventory-service ---
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ inventory-service ---
 [INFO] Attaching agents: []
 
   .   ____          _            __ _ _
@@ -52,28 +34,35 @@ Progress (1): 255 B                   Downloaded from central: https://repo.ma
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.5)
 
-2026-05-19T17:56:42.016+05:30  INFO 41012 --- [           main] org.example.InventoryApplication         : Starting InventoryApplication using Java 17.0.18 with PID 41012 (/Users/kalyanimogre/shop/inventory-service/target/classes started by kalyanimogre in /Users/kalyanimogre/shop/inventory-service)
-2026-05-19T17:56:42.019+05:30  INFO 41012 --- [           main] org.example.InventoryApplication         : No active profile set, falling back to 1 default profile: "default"
-2026-05-19T17:56:43.240+05:30  INFO 41012 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-19T17:56:43.322+05:30  INFO 41012 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
-2026-05-19T17:56:43.990+05:30  INFO 41012 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-05-19T17:56:43.996+05:30  INFO 41012 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-19T17:56:43.997+05:30  INFO 41012 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-05-19T17:56:44.045+05:30  INFO 41012 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-05-19T17:56:44.047+05:30  INFO 41012 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1991 ms
-2026-05-19T17:56:44.239+05:30  INFO 41012 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-19T17:56:44.311+05:30  INFO 41012 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-05-19T17:56:44.333+05:30  INFO 41012 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-19T17:56:44.812+05:30  INFO 41012 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-19T17:56:44.843+05:30  INFO 41012 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-19T17:56:45.134+05:30  INFO 41012 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e52ed5d
-2026-05-19T17:56:45.137+05:30  INFO 41012 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-19T17:56:45.183+05:30  WARN 41012 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-05-19T17:56:46.000+05:30  INFO 41012 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-19T17:56:46.076+05:30  INFO 41012 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-19T17:56:46.276+05:30  INFO 41012 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-19T17:56:46.605+05:30  WARN 41012 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-19T17:56:47.215+05:30  INFO 41012 --- [           main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+2026-05-25T14:06:40.146+05:30  INFO 33812 --- [           main] org.example.InventoryApplication         : Starting InventoryApplication using Java 17.0.18 with PID 33812 (/Users/kalyanimogre/shop/inventory-service/target/classes started by kalyanimogre in /Users/kalyanimogre/shop/inventory-service)
+2026-05-25T14:06:40.147+05:30  INFO 33812 --- [           main] org.example.InventoryApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-05-25T14:06:40.588+05:30  INFO 33812 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-25T14:06:40.615+05:30  INFO 33812 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2026-05-25T14:06:40.905+05:30  INFO 33812 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-25T14:06:40.911+05:30  INFO 33812 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-25T14:06:40.912+05:30  INFO 33812 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-25T14:06:40.966+05:30  INFO 33812 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-25T14:06:40.967+05:30  INFO 33812 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 802 ms
+2026-05-25T14:06:41.149+05:30  INFO 33812 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-25T14:06:41.182+05:30  INFO 33812 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-25T14:06:41.198+05:30  INFO 33812 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-25T14:06:41.432+05:30  INFO 33812 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-25T14:06:41.471+05:30  INFO 33812 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-25T14:06:41.662+05:30  INFO 33812 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52ca0ad4
+2026-05-25T14:06:41.663+05:30  INFO 33812 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-25T14:06:41.687+05:30  WARN 33812 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25T14:06:42.138+05:30  INFO 33812 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-25T14:06:42.190+05:30  INFO 33812 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-25T14:06:42.304+05:30  INFO 33812 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-25T14:06:42.603+05:30  WARN 33812 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25T14:06:42.611+05:30  WARN 33812 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 033484ab-632b-46af-8426-349a50873137
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-25T14:06:42.757+05:30  INFO 33812 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2822ee4b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54a332e4, org.springframework.security.web.context.SecurityContextHolderFilter@71bbbb9f, org.springframework.security.web.header.HeaderWriterFilter@f341e3c, org.springframework.web.filter.CorsFilter@1e3f0c5c, org.springframework.security.web.authentication.logout.LogoutFilter@6d89c923, org.example.config.JwtAuthFilter@5be052ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4baf3987, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fef485d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1476e447, org.springframework.security.web.session.SessionManagementFilter@5034e0c6, org.springframework.security.web.access.ExceptionTranslationFilter@2c51ff83, org.springframework.security.web.access.intercept.AuthorizationFilter@3299cc9f]
+2026-05-25T14:06:42.905+05:30  INFO 33812 --- [           main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
 	auto.include.jmx.reporter = true
 	bootstrap.servers = [localhost:9092]
 	client.dns.lookup = use_all_dns_ips
@@ -144,44 +133,517 @@ Progress (1): 255 B                   Downloaded from central: https://repo.ma
 	ssl.truststore.password = null
 	ssl.truststore.type = JKS
 
-2026-05-19T17:56:47.292+05:30  INFO 41012 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-05-19T17:56:47.292+05:30  INFO 41012 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-05-19T17:56:47.292+05:30  INFO 41012 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779193607291
-2026-05-19T17:56:47.542+05:30  INFO 41012 --- [| adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
-2026-05-19T17:56:47.547+05:30  INFO 41012 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2026-05-19T17:56:47.548+05:30  INFO 41012 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-05-19T17:56:47.548+05:30  INFO 41012 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2026-05-19T17:56:47.558+05:30  WARN 41012 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2026-05-19T17:56:47.559+05:30  INFO 41012 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-19T17:56:47.562+05:30  INFO 41012 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-05-19T17:56:47.565+05:30  INFO 41012 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-05-19T17:56:47.590+05:30  INFO 41012 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-05-25T14:06:42.958+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-05-25T14:06:42.958+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-05-25T14:06:42.958+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779698202957
+2026-05-25T14:06:43.118+05:30  INFO 33812 --- [| adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2026-05-25T14:06:43.120+05:30  INFO 33812 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-05-25T14:06:43.120+05:30  INFO 33812 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-05-25T14:06:43.120+05:30  INFO 33812 --- [| adminclient-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-05-25T14:06:43.135+05:30  INFO 33812 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-05-25T14:06:43.151+05:30  INFO 33812 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-inventory-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = inventory-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-05-19T17:56:47.599+05:30 ERROR 41012 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+2026-05-25T14:06:43.196+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-05-25T14:06:43.196+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-05-25T14:06:43.196+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779698203196
+2026-05-25T14:06:43.197+05:30  INFO 33812 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Subscribed to topic(s): cart.stock-updated
+2026-05-25T14:06:43.201+05:30  INFO 33812 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-inventory-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = inventory-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-***************************
-APPLICATION FAILED TO START
-***************************
+2026-05-25T14:06:43.203+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-05-25T14:06:43.203+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-05-25T14:06:43.203+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779698203203
+2026-05-25T14:06:43.204+05:30  INFO 33812 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Subscribed to topic(s): stock.check-request
+2026-05-25T14:06:43.204+05:30  INFO 33812 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-inventory-group-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = inventory-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-Description:
+2026-05-25T14:06:43.206+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-05-25T14:06:43.206+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-05-25T14:06:43.206+05:30  INFO 33812 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1779698203206
+2026-05-25T14:06:43.206+05:30  INFO 33812 --- [           main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Subscribed to topic(s): stock.update-request
+2026-05-25T14:06:43.207+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
+2026-05-25T14:06:43.208+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
+2026-05-25T14:06:43.210+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Cluster ID: if7cOHP-Q1W2NxeGrA8t8A
+2026-05-25T14:06:43.212+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:06:43.212+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:06:43.212+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:06:43.213+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] (Re-)joining group
+2026-05-25T14:06:43.213+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] (Re-)joining group
+2026-05-25T14:06:43.213+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] (Re-)joining group
+2026-05-25T14:06:43.213+05:30  INFO 33812 --- [           main] org.example.InventoryApplication         : Started InventoryApplication in 3.299 seconds (process running for 3.454)
+2026-05-25T14:06:43.237+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Request joining group due to: need to re-join with the given member-id: consumer-inventory-group-3-73f557dd-4943-4c0e-a4b2-e46139da2a6e
+2026-05-25T14:06:43.237+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Request joining group due to: need to re-join with the given member-id: consumer-inventory-group-1-297e274f-540b-44f0-bcbc-ceb5697705d8
+2026-05-25T14:06:43.237+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Request joining group due to: need to re-join with the given member-id: consumer-inventory-group-2-5e3730ed-cbd7-4ce8-8862-43a84608aa41
+2026-05-25T14:06:43.238+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-25T14:06:43.238+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-25T14:06:43.238+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-25T14:06:43.238+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] (Re-)joining group
+2026-05-25T14:06:43.238+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] (Re-)joining group
+2026-05-25T14:06:43.238+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] (Re-)joining group
+2026-05-25T14:06:43.248+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Successfully joined group with generation Generation{generationId=180, memberId='consumer-inventory-group-3-73f557dd-4943-4c0e-a4b2-e46139da2a6e', protocol='range'}
+2026-05-25T14:06:43.248+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Successfully joined group with generation Generation{generationId=180, memberId='consumer-inventory-group-2-5e3730ed-cbd7-4ce8-8862-43a84608aa41', protocol='range'}
+2026-05-25T14:06:43.248+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Successfully joined group with generation Generation{generationId=180, memberId='consumer-inventory-group-1-297e274f-540b-44f0-bcbc-ceb5697705d8', protocol='range'}
+2026-05-25T14:06:43.257+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Finished assignment for group at generation 180: {consumer-inventory-group-3-73f557dd-4943-4c0e-a4b2-e46139da2a6e=Assignment(partitions=[stock.update-request-0]), consumer-inventory-group-2-5e3730ed-cbd7-4ce8-8862-43a84608aa41=Assignment(partitions=[stock.check-request-0]), consumer-inventory-group-1-297e274f-540b-44f0-bcbc-ceb5697705d8=Assignment(partitions=[cart.stock-updated-0])}
+2026-05-25T14:06:43.268+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Successfully synced group in generation Generation{generationId=180, memberId='consumer-inventory-group-1-297e274f-540b-44f0-bcbc-ceb5697705d8', protocol='range'}
+2026-05-25T14:06:43.268+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Successfully synced group in generation Generation{generationId=180, memberId='consumer-inventory-group-2-5e3730ed-cbd7-4ce8-8862-43a84608aa41', protocol='range'}
+2026-05-25T14:06:43.268+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Successfully synced group in generation Generation{generationId=180, memberId='consumer-inventory-group-3-73f557dd-4943-4c0e-a4b2-e46139da2a6e', protocol='range'}
+2026-05-25T14:06:43.269+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Notifying assignor about the new Assignment(partitions=[cart.stock-updated-0])
+2026-05-25T14:06:43.269+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Notifying assignor about the new Assignment(partitions=[stock.update-request-0])
+2026-05-25T14:06:43.269+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Notifying assignor about the new Assignment(partitions=[stock.check-request-0])
+2026-05-25T14:06:43.270+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Adding newly assigned partitions: cart.stock-updated-0
+2026-05-25T14:06:43.270+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Adding newly assigned partitions: stock.check-request-0
+2026-05-25T14:06:43.270+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Adding newly assigned partitions: stock.update-request-0
+2026-05-25T14:06:43.283+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Setting offset for partition stock.check-request-0 to the committed offset FetchPosition{offset=160, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=48}}
+2026-05-25T14:06:43.283+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Setting offset for partition cart.stock-updated-0 to the committed offset FetchPosition{offset=158, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=33}}
+2026-05-25T14:06:43.283+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Setting offset for partition stock.update-request-0 to the committed offset FetchPosition{offset=112, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=33}}
+2026-05-25T14:06:43.283+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : inventory-group: partitions assigned: [stock.check-request-0]
+2026-05-25T14:06:43.283+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : inventory-group: partitions assigned: [stock.update-request-0]
+2026-05-25T14:06:43.283+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : inventory-group: partitions assigned: [cart.stock-updated-0]
+2026-05-25T14:08:46.261+05:30  INFO 33812 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25T14:08:46.267+05:30  INFO 33812 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-25T14:08:46.331+05:30  INFO 33812 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 63 ms
+Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select p1_0.id,p1_0.average_rating,p1_0.category,p1_0.created_by,p1_0.description,p1_0.imageurl,p1_0.name,p1_0.price,p1_0.review_count,p1_0.sku,p1_0.stock_quantity from products p1_0 where p1_0.id=?
+Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.average_rating,p1_0.category,p1_0.created_by,p1_0.description,p1_0.imageurl,p1_0.name,p1_0.price,p1_0.review_count,p1_0.sku,p1_0.stock_quantity from products p1_0 where p1_0.id=?
+Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select p1_0.id,p1_0.average_rating,p1_0.category,p1_0.created_by,p1_0.description,p1_0.imageurl,p1_0.name,p1_0.price,p1_0.review_count,p1_0.sku,p1_0.stock_quantity from products p1_0 where p1_0.id=?
+Hibernate: select r1_0.id from reviews r1_0 where r1_0.product_id=? and r1_0.user_email=? fetch first ? rows only
+Hibernate: insert into reviews (comment,created_at,product_id,rating,updated_at,user_email,user_name) values (?,?,?,?,?,?,?)
+Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
+Hibernate: update products set average_rating=?,category=?,created_by=?,description=?,imageurl=?,name=?,price=?,review_count=?,sku=?,stock_quantity=? where id=?
+Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
+2026-05-25T14:15:43.446+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Node -1 disconnected.
+2026-05-25T14:15:43.446+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Node -1 disconnected.
+2026-05-25T14:15:43.446+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Node -1 disconnected.
+Hibernate: select p1_0.id,p1_0.average_rating,p1_0.category,p1_0.created_by,p1_0.description,p1_0.imageurl,p1_0.name,p1_0.price,p1_0.review_count,p1_0.sku,p1_0.stock_quantity from products p1_0 where p1_0.id=?
+Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select p1_0.id,p1_0.average_rating,p1_0.category,p1_0.created_by,p1_0.description,p1_0.imageurl,p1_0.name,p1_0.price,p1_0.review_count,p1_0.sku,p1_0.stock_quantity from products p1_0 where p1_0.id=?
+Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rating,r1_0.updated_at,r1_0.user_email,r1_0.user_name from reviews r1_0 where r1_0.product_id=? order by r1_0.created_at desc offset ? rows fetch first ? rows only
+Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
+Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
+2026-05-25T14:40:25.921+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T14:40:25.923+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:40:25.932+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T14:40:25.960+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T14:40:25.960+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T14:40:25.961+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:40:25.961+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:40:25.961+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T14:40:25.961+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T14:40:26.001+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:40:26.001+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:40:26.001+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:40:26.002+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T14:40:26.002+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:40:26.002+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T14:40:26.003+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:40:26.110+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:40:26.112+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:47.757+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T14:56:47.758+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T14:56:47.758+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T14:56:47.836+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2225 due to node 1 being disconnected (elapsed time since creation: 977031ms, elapsed time since send: 977031ms, request timeout: 30000ms)
+2026-05-25T14:56:47.837+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2223 due to node 1 being disconnected (elapsed time since creation: 977087ms, elapsed time since send: 977087ms, request timeout: 30000ms)
+2026-05-25T14:56:47.837+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2224 due to node 1 being disconnected (elapsed time since creation: 977031ms, elapsed time since send: 977031ms, request timeout: 30000ms)
+2026-05-25T14:56:47.844+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T14:56:47.844+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:47.845+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T14:56:47.845+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T14:56:47.845+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:47.845+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T14:56:47.844+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T14:56:47.849+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:47.849+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T14:56:47.844+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Error sending fetch request (sessionId=644439532, epoch=1888) to node 1:
 
-Web server failed to start. Port 8081 was already in use.
+org.apache.kafka.common.errors.DisconnectException: null
 
-Action:
+2026-05-25T14:56:47.843+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Error sending fetch request (sessionId=1912327175, epoch=1888) to node 1:
 
-Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+org.apache.kafka.common.errors.DisconnectException: null
 
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  11.482 s
-[INFO] Finished at: 2026-05-19T17:56:47+05:30
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.5:run (default-cli) on project inventory-service: Process terminated with exit code: 1 -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+2026-05-25T14:56:47.843+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Error sending fetch request (sessionId=1864586698, epoch=1888) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T14:56:48.113+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:48.113+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:48.113+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:48.113+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:48.121+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:48.120+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T14:56:48.702+05:30  WARN 33812 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m36s816ms).
+2026-05-25T15:12:28.763+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T15:12:28.762+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T15:12:28.762+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T15:12:28.792+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2240 due to node 1 being disconnected (elapsed time since creation: 935942ms, elapsed time since send: 935942ms, request timeout: 30000ms)
+2026-05-25T15:12:28.792+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2241 due to node 1 being disconnected (elapsed time since creation: 935942ms, elapsed time since send: 935942ms, request timeout: 30000ms)
+2026-05-25T15:12:28.795+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2242 due to node 1 being disconnected (elapsed time since creation: 935942ms, elapsed time since send: 935942ms, request timeout: 30000ms)
+2026-05-25T15:12:28.811+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T15:12:28.811+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:12:28.811+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T15:12:28.812+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T15:12:28.811+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T15:12:28.812+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:12:28.812+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:12:28.815+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T15:12:28.815+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T15:12:28.806+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Error sending fetch request (sessionId=323245811, epoch=9) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T15:12:28.806+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Error sending fetch request (sessionId=537081889, epoch=9) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T15:12:28.809+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Error sending fetch request (sessionId=143359667, epoch=9) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T15:12:29.075+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:12:29.076+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:12:29.101+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:30:01.594+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T15:30:01.593+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T15:30:01.593+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T15:30:01.716+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2256 due to node 1 being disconnected (elapsed time since creation: 1047920ms, elapsed time since send: 1047920ms, request timeout: 30000ms)
+2026-05-25T15:30:01.698+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2257 due to node 1 being disconnected (elapsed time since creation: 1047920ms, elapsed time since send: 1047920ms, request timeout: 30000ms)
+2026-05-25T15:30:01.716+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2258 due to node 1 being disconnected (elapsed time since creation: 1047920ms, elapsed time since send: 1047920ms, request timeout: 30000ms)
+2026-05-25T15:30:01.725+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T15:30:01.726+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T15:30:01.726+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:30:01.726+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T15:30:01.726+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:30:01.732+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T15:30:01.724+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T15:30:01.735+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:30:01.736+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T15:30:01.722+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Error sending fetch request (sessionId=2049962694, epoch=9) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T15:30:01.722+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Error sending fetch request (sessionId=971293796, epoch=9) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T15:30:01.722+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Error sending fetch request (sessionId=682537659, epoch=9) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T15:30:01.814+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:30:01.814+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:30:01.817+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:33:51.304+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T15:33:51.304+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T15:33:51.304+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Disconnecting from node 1 due to request timeout.
+2026-05-25T15:33:51.611+05:30  INFO 33812 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2272 due to node 1 being disconnected (elapsed time since creation: 224854ms, elapsed time since send: 224854ms, request timeout: 30000ms)
+2026-05-25T15:33:51.615+05:30  INFO 33812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2274 due to node 1 being disconnected (elapsed time since creation: 224853ms, elapsed time since send: 224853ms, request timeout: 30000ms)
+2026-05-25T15:33:51.639+05:30  INFO 33812 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Cancelled in-flight FETCH request with correlation id 2273 due to node 1 being disconnected (elapsed time since creation: 224853ms, elapsed time since send: 224853ms, request timeout: 30000ms)
+2026-05-25T15:33:51.773+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T15:33:51.773+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:33:51.774+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T15:33:51.773+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T15:33:51.638+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Error sending fetch request (sessionId=827851460, epoch=9) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T15:33:51.774+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:33:51.644+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Error sending fetch request (sessionId=428457818, epoch=9) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T15:33:51.774+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2026-05-25T15:33:51.778+05:30  INFO 33812 --- [inventory-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:33:51.779+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T15:33:51.639+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Error sending fetch request (sessionId=83897367, epoch=9) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2026-05-25T15:33:51.776+05:30  INFO 33812 --- [inventory-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Client requested disconnect from node 2147483646
+2026-05-25T15:33:51.991+05:30  INFO 33812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-2, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:33:51.991+05:30  INFO 33812 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-1, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:33:51.992+05:30  INFO 33812 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-inventory-group-3, groupId=inventory-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-25T15:34:05.868+05:30  WARN 33812 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m17s163ms).
