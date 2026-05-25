@@ -30,4 +30,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
     @Query("SELECT DISTINCT o FROM Order o LEFT JOIN FETCH o.items ORDER BY o.createdAt DESC")
     List<Order> findAllWithItems();
+
+    @Query("SELECT CASE WHEN COUNT(o) > 0 THEN true ELSE false END FROM Order o JOIN o.items i WHERE o.userId = :userId AND i.productId = :productId AND o.status = 'CONFIRMED'")
+    boolean hasUserPurchasedProduct(@Param("userId") String userId, @Param("productId") Long productId);
 }

@@ -8,4 +8,6 @@ export interface Product {
   rating: number;
   image: string;
   description: string;
+  reviewCount?: number;
 }
+

@@ -268,26 +268,8 @@ public AddItemResponse addItemToCart(String userId, Long productId, Integer quan
         pendingStockUpdates.put(key, response);
     }
 
-    private StockCheckResponse waitForStockUpdate(Long cartItemId, long timeoutMs){
-        long startTime = System.currentTimeMillis();
 
-        while(System.currentTimeMillis() - startTime < timeoutMs){
-            StockCheckResponse response = pendingStockUpdates.get(cartItemId.toString());
-            if(response != null){
-                pendingStockUpdates.remove(cartItemId.toString());
-                return response;
-            }
 
-            try{
-                Thread.sleep(100);
-            }
-            catch(InterruptedException e){
-                Thread.currentThread().interrupt();
-                break;
-            }
-        }
-        return null;
-    }
 
     public void updateCartItemStock(Long productId, Integer newStockQuantity){
         logger.info("Updating stock quantity for productId: {} to {}", productId, newStockQuantity);

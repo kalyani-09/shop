@@ -304,4 +304,7 @@ public class CheckOutService {
         orderRepository.delete(order);
         logger.info("Deleted order: {}", orderNumber);
     }
+    public boolean hasUserPurchasedProduct(String userId, Long productId){
+        return orderRepository.hasUserPurchasedProduct(userId, productId);
+    }
 }

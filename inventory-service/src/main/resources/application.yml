@@ -31,6 +31,14 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
+app:
+  jwt:
+    secret: "JmOhT73SmmCi6kilzNi07YGh1ZAq3rBcbZV1CCiXzW0="
+
+cart:
+  service:
+    url: http://localhost:8082
+
 topic:
   cart-item-added: cart.item-added
   stock-check-request: stock.check-request

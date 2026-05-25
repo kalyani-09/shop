@@ -37,6 +37,12 @@ public class Product {
 
     private String sku;
 
+    @Column(name = "average_rating")
+    private Double averageRating;
+
+    @Column(name = "review_count")
+    private Integer reviewCount;
+
     @Column(name = "created_by")
     private String createdBy;
 
@@ -46,7 +52,7 @@ public class Product {
 
     // Constructor with fields
     public Product(String name, String description, Double price,
-            Integer stockQuantity, String category, String imageUrl, String sku) {
+            Integer stockQuantity, String category, String imageUrl, String sku, Double averageRating, Integer reviewCount) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -54,5 +60,7 @@ public class Product {
         this.category = category;
         this.imageUrl = imageUrl;
         this.sku = sku;
+        this.averageRating = averageRating;
+        this.reviewCount = reviewCount;
     }
 }

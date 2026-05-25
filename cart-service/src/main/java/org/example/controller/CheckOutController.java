@@ -152,4 +152,12 @@ public class CheckOutController {
         return SecurityContextHolder.getContext().getAuthentication().getName();
     }
 
+    @GetMapping("/cart/internal/verify-purchase")
+    public ResponseEntity<Map<String, Object>> verifyPurchase(
+            @RequestParam Long productId,
+            @RequestParam String userEmail){
+        boolean purchased = checkOutService.hasUserPurchasedProduct(userEmail, productId);
+        return ResponseEntity.ok(Map.of("purchased", purchased));
+    }
+
 }
