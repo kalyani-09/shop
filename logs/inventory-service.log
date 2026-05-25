@@ -662,3 +662,16 @@ Hibernate: select r1_0.id,r1_0.comment,r1_0.created_at,r1_0.product_id,r1_0.rati
 Hibernate: select p1_0.id,p1_0.average_rating,p1_0.category,p1_0.created_by,p1_0.description,p1_0.imageurl,p1_0.name,p1_0.price,p1_0.review_count,p1_0.sku,p1_0.stock_quantity from products p1_0 where p1_0.id=?
 Hibernate: select avg(r1_0.rating) from reviews r1_0 where r1_0.product_id=?
 Hibernate: select count(r1_0.id) from reviews r1_0 where r1_0.product_id=?
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:58 h
+[INFO] Finished at: 2026-05-25T16:04:58+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.5:run (default-cli) on project inventory-service: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
